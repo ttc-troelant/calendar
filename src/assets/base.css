@@ -19,6 +19,11 @@
   --vt-c-text-light-2: #333;
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+
+  --a-ploeg: #2e86ab;
+  --b-ploeg: #f5f749;
+  --c-ploeg: #f24236;
+  --algemeen: #f6f5ae;
 }
 
 /* semantic color variables for this project */
@@ -62,7 +67,7 @@
 body {
   min-height: 100vh;
   color: var(--color-text);
-  background: var(--color-background);
+  background: #9b59b6;
   transition:
     color 0.5s,
     background-color 0.5s;

@@ -1,7 +1,9 @@
 <template>
   <main>
-    <CalendarComponent></CalendarComponent>
-    <ActivityOverview :activities="activities"></ActivityOverview>
+    <div class="flex-container">
+      <CalendarComponent></CalendarComponent>
+      <ActivityOverview :activities="activities"></ActivityOverview>
+    </div>
   </main>
 </template>
 
@@ -33,9 +35,30 @@ const activities: Activity[] = [
     location: 'Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai',
   },
   {
+    title: "Initiatie psychologische hervorming",
+    from: new Date(2025, 5, 5, 19, 30, 0),
+    till: new Date(2025, 5, 5, 23, 0, 0),
+    categories: [ActivityCategories.ALGEMEEN],
+    location: 'Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai',
+  },
+  {
     title: "Dubbel Clubkampioenschap",
     from: new Date(2025, 5, 5, 19, 30, 0),
     till: new Date(2025, 5, 5, 23, 0, 0),
+    categories: [ActivityCategories.ALGEMEEN],
+    location: 'Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai',
+  },
+  {
+    title: "Initiatie TTC Troelant",
+    from: new Date(2025, 5, 12, 19, 30, 0),
+    till: new Date(2025, 5, 12, 23, 0, 0),
+    categories: [ActivityCategories.ALGEMEEN],
+    location: 'Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai',
+  },
+  {
+    title: "Initiatie TTC Troelant",
+    from: new Date(2025, 5, 12, 19, 30, 0),
+    till: new Date(2025, 5, 12, 23, 0, 0),
     categories: [ActivityCategories.ALGEMEEN],
     location: 'Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai',
   },

@@ -1,9 +1,13 @@
 <template>
-  <ul class="activityList">
-    <li v-for="activity in activities" :key="activity.title">
-      <ActivityDetail :activity="activity"></ActivityDetail>
-    </li>
-  </ul>
+  <div class="activityList">
+    <p>Activiteiten</p>
+    <ul>
+      <li class="activityItem" v-for="activity in activities" :key="activity.title">
+        <ActivityDetail :activity="activity"></ActivityDetail>
+      </li>
+    </ul>
+  </div>
+  
 </template>
 
 <script setup lang="ts">
