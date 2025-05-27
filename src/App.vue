@@ -1,8 +1,11 @@
 <template>
   <main>
-    <div class="flex-container">
-      <CalendarComponent></CalendarComponent>
-      <ActivityOverview :activities="activities"></ActivityOverview>
+    <div>
+      <h1>Kalender TTC Troelant</h1>
+      <div class="flex-container">
+        <CalendarComponent></CalendarComponent>
+        <ActivityOverview :activities="activities"></ActivityOverview>
+      </div>
     </div>
   </main>
 </template>
