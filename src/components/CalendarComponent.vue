@@ -35,6 +35,10 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 
+const emit = defineEmits<{
+  changeMonth: [currYear: number, currMonth: number]
+}>();
+
 // getting new date, current year and month
 const date = ref(new Date())
 const currYear = ref(date.value.getFullYear())
@@ -55,10 +59,10 @@ const lastMonthDays = computed(() => {
 
 const nextMonthDays = computed(() => {
   const days = []
-  for(let i = lastDayOfMonth.value; i <= 6; i++) {
+  for (let i = lastDayOfMonth.value; i <= 6; i++) {
     days.push(i - lastDayOfMonth.value + 1)
   }
-  
+
   return days
 })
 
@@ -67,7 +71,7 @@ const isToday = (day: number) => day === date.value.getDate() && currMonth.value
 function DecreaseMonth() {
   currMonth.value = currMonth.value - 1
 
-  if(currMonth.value < 0){
+  if (currMonth.value < 0) {
     // creating a new date of current year & month and pass it as date value
     date.value = new Date(currYear.value, currMonth.value, new Date().getDate());
     currYear.value = date.value.getFullYear(); // updating current year with new date year
@@ -75,12 +79,14 @@ function DecreaseMonth() {
   } else {
     date.value = new Date()
   }
+
+  emit('changeMonth', currYear.value, currMonth.value)
 }
 
 function IncrementMonth() {
   currMonth.value = currMonth.value + 1
 
-  if(currMonth.value > 11){
+  if (currMonth.value > 11) {
     // creating a new date of current year & month and pass it as date value
     date.value = new Date(currYear.value, currMonth.value, new Date().getDate());
     currYear.value = date.value.getFullYear(); // updating current year with new date year
@@ -88,5 +94,7 @@ function IncrementMonth() {
   } else {
     date.value = new Date()
   }
+
+  emit('changeMonth', currYear.value, currMonth.value)
 }
 </script>

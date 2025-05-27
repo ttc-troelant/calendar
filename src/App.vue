@@ -3,17 +3,28 @@
     <div>
       <h1>Kalender TTC Troelant</h1>
       <div class="flex-container">
-        <CalendarComponent></CalendarComponent>
-        <ActivityOverview :activities="activities"></ActivityOverview>
+        <CalendarComponent @change-month="UpdateDate"></CalendarComponent>
+        <ActivityOverview :activities="filteredActivities"></ActivityOverview>
       </div>
     </div>
   </main>
 </template>
 
 <script setup lang="ts">
+import { computed, ref } from 'vue';
 import CalendarComponent from './components/CalendarComponent.vue'
 import ActivityOverview from './components/ActivityOverview.vue';
 import { ActivityCategories, type Activity } from './models/Activity';
+
+const date = ref(new Date())
+const filteredActivities = computed(() => activities.filter(activity => {
+  return activity.from.getFullYear() == date.value.getFullYear() &&
+    activity.from.getMonth() == date.value.getMonth()
+}))
+
+function UpdateDate(newYear: number, newMonth: number) {
+  date.value = new Date(newYear, newMonth)
+}
 
 const activities: Activity[] = [
   {

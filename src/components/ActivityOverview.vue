@@ -2,7 +2,7 @@
   <div class="activityList">
     <p>Activiteiten</p>
     <ul>
-      <li class="activityItem" v-for="activity in activities" :key="activity.title">
+      <li class="activityItem" v-for="(activity, index) in activities" :key="index">
         <ActivityDetail :activity="activity"></ActivityDetail>
       </li>
     </ul>
