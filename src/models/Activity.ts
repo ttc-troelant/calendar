@@ -12,4 +12,5 @@ export enum ActivityCategory {
   BPLOEG = 'Troelant B',
   CPLOEG = 'Troelant C',
   ALGEMEEN = 'Algemeen',
+  ONBESCHIKBAAR = 'Zaal onbeschikbaar',
 }

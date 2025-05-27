@@ -50,9 +50,16 @@ const activities: Activity[] = [
   },
   {
     title: "Troelant C / Orix C",
+    from: new Date(2025, 4, 27, 20, 0, 0),
+    till: new Date(2025, 4, 27, 23, 0, 0),
+    category: ActivityCategory.CPLOEG,
+    location: 'Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai',
+  },
+  {
+    title: "Zaal niet beschikbaar",
     from: new Date(2025, 4, 26, 20, 0, 0),
     till: new Date(2025, 4, 26, 23, 0, 0),
-    category: ActivityCategory.CPLOEG,
+    category: ActivityCategory.ONBESCHIKBAAR,
     location: 'Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai',
   },
   {

@@ -22,7 +22,7 @@
           <li class="inactive">{{ day }}</li>
         </template>
         <template v-for="day in lastDateOfMonth" :key="day">
-          <li :class="{ active: isToday(day) }">
+          <li :class="{ active: isToday(day), 'unavailable': isAvailable(day) }">
             {{ day }}
             <div v-if="getActivityCategoriesForDay(day).length" class="calendarActivityPreview">
               <template v-for="category in getActivityCategoriesForDay(day)" :key="category">
@@ -110,7 +110,7 @@ const { activities } = defineProps<{ activities: Activity[] }>()
 
 function getActivityCategoriesForDay(day: number): ActivityCategory[] {
   return activities
-    .filter((activity) => activity.from.getDate() == day)
+    .filter((activity) => activity.from.getDate() === day && activity.category !== ActivityCategory.ONBESCHIKBAAR)
     .map((activity) => activity.category)
 }
 
@@ -125,5 +125,10 @@ function getActivityCategoryClass(category: ActivityCategory) {
     case ActivityCategory.ALGEMEEN:
       return 'algemeen-calendarItem'
   }
+}
+
+function isAvailable(day: number) {
+  return activities
+    .filter((activity) => activity.from.getDate() === day && activity.category === ActivityCategory.ONBESCHIKBAAR).length > 0
 }
 </script>

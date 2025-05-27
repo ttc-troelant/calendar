@@ -7,7 +7,7 @@
 - [ ] Import ICS Calendar
 - [ ] Export to ICS
 - [ ] Export to ICS Feed
-- [ ] Color code events
+- [x] Color code events
 - [ ] Filter events by month and date
 
 ## Future improvements
