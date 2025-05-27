@@ -1,15 +1,15 @@
 export interface Activity {
-  title: string,
-  description?: string,
-  from: Date,
-  till: Date,
-  categories: ActivityCategories[],
+  title: string
+  description?: string
+  from: Date
+  till: Date
+  category: ActivityCategory
   location?: string
 }
 
-export enum ActivityCategories {
-  APLOEG = "Troelant A",
-  BPLOEG = "Troelant B",
-  CPLOEG = "Troelant C",
-  ALGEMEEN = "Algemeen"
+export enum ActivityCategory {
+  APLOEG = 'Troelant A',
+  BPLOEG = 'Troelant B',
+  CPLOEG = 'Troelant C',
+  ALGEMEEN = 'Algemeen',
 }

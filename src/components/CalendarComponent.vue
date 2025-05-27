@@ -22,7 +22,14 @@
           <li class="inactive">{{ day }}</li>
         </template>
         <template v-for="day in lastDateOfMonth" :key="day">
-          <li :class="{ active: isToday(day) }">{{ day }}</li>
+          <li :class="{ active: isToday(day) }">
+            {{ day }}
+            <div v-if="getActivityCategoriesForDay(day).length" class="calendarActivityPreview">
+              <template v-for="category in getActivityCategoriesForDay(day)" :key="category">
+                <div :class="getActivityCategoryClass(category)"></div>
+              </template>
+            </div>
+          </li>
         </template>
         <template v-for="day in nextMonthDays" :key="day">
           <li class="inactive">{{ day }}</li>
@@ -33,6 +40,7 @@
 </template>
 
 <script setup lang="ts">
+import { ActivityCategory, type Activity } from '@/models/Activity';
 import { ref, computed } from 'vue'
 
 const emit = defineEmits<{
@@ -96,5 +104,26 @@ function IncrementMonth() {
   }
 
   emit('changeMonth', currYear.value, currMonth.value)
+}
+
+const { activities } = defineProps<{ activities: Activity[] }>()
+
+function getActivityCategoriesForDay(day: number): ActivityCategory[] {
+  return activities
+    .filter((activity) => activity.from.getDate() == day)
+    .map((activity) => activity.category)
+}
+
+function getActivityCategoryClass(category: ActivityCategory) {
+  switch (category) {
+    case ActivityCategory.APLOEG:
+      return 'a-ploeg-calendarItem'
+    case ActivityCategory.BPLOEG:
+      return 'b-ploeg-calendarItem'
+    case ActivityCategory.CPLOEG:
+      return 'c-ploeg-calendarItem'
+    case ActivityCategory.ALGEMEEN:
+      return 'algemeen-calendarItem'
+  }
 }
 </script>

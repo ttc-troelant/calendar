@@ -119,6 +119,7 @@ header .current-date {
   background: var(--color-background);
   color: #fff;
   min-width: 400px;
+  max-width: 450px;
   padding: 25px 30px 10px;
   overflow-y: scroll;
 }
@@ -133,6 +134,10 @@ header .current-date {
   padding: 20px 0;
 }
 
+.activityItem {
+  margin-left: 10px;
+}
+
 .activityItem:not(:last-child)::after {
   content: ' ';
   display: block;
@@ -145,6 +150,71 @@ header .current-date {
 
 .activityItem:not(:first-child) h2 {
   margin-top: 10px;
+}
+
+.a-ploeg-listItem,
+.b-ploeg-listItem,
+.c-ploeg-listItem,
+.algemeen-listItem {
+  position: relative;
+}
+
+.a-ploeg-listItem::before,
+.b-ploeg-listItem::before,
+.c-ploeg-listItem::before,
+.algemeen-listItem::before {
+  content: ' ';
+  position: absolute;
+  top: 5%;
+  left: -10px;
+  display: block;
+  width: 3px;
+  border-radius: 5px;
+  height: 1.6rem;
+}
+
+.a-ploeg-listItem::before {
+  background: var(--a-ploeg);
+}
+.b-ploeg-listItem::before {
+  background: var(--b-ploeg);
+}
+.c-ploeg-listItem::before {
+  background: var(--c-ploeg);
+}
+
+.calendarActivityPreview{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  gap: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.a-ploeg-calendarItem,
+.b-ploeg-calendarItem,
+.c-ploeg-calendarItem,
+.algemeen-calendarItem {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+.a-ploeg-calendarItem {
+  background: var(--a-ploeg);
+}
+
+.b-ploeg-calendarItem {
+  background: var(--b-ploeg);
+}
+
+.c-ploeg-calendarItem {
+  background: var(--c-ploeg);
+}
+
+.algemeen-calendarItem {
+  background: var(--algemeen);
 }
 
 @media screen and (max-width: 480px) {
