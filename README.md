@@ -1,5 +1,18 @@
 # calendar
 
+## To implement
+- [ ] Add activities
+- [ ] Edit activities
+- [ ] Remove activities
+- [ ] Import ICS Calendar
+- [ ] Export to ICS
+- [ ] Export to ICS Feed
+- [ ] Color code events
+- [ ] Filter events by month and date
+
+## Future improvements
+- [ ] Select month and year by clicking on it
+
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
