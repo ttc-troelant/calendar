@@ -103,7 +103,7 @@ header .current-date {
 }
 .days li.unavailable {
   font-weight: 500;
-  text-decoration: line-through;
+  color: #fff;
 }
 .days li::before {
   position: absolute;
@@ -120,7 +120,7 @@ header .current-date {
   background: #9b59b6;
 }
 .days li.unavailable::before {
-  background: none;
+  background: #333;
 }
 .days li:not(.active):hover::before {
   background: #f2f2f2;
@@ -199,7 +199,8 @@ header .current-date {
   left: 50%;
   transform: translate(-50%, 0);
   display: flex;
-  gap: 5px;
+  flex-direction: column;
+  gap: 1px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -208,9 +209,8 @@ header .current-date {
 .b-ploeg-calendarItem,
 .c-ploeg-calendarItem,
 .algemeen-calendarItem {
-  width: 5px;
+  width: 20px;
   height: 5px;
-  border-radius: 50%;
 }
 .a-ploeg-calendarItem {
   background: var(--a-ploeg);
