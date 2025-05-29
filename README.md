@@ -12,6 +12,7 @@
 
 ## Future improvements
 - [ ] Select month and year by clicking on it
+- [ ] Click on date opens the event
 
 This template should help get you started developing with Vue 3 in Vite.
 
