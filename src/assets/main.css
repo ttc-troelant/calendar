@@ -35,6 +35,12 @@ main h1 {
 
 header .icons {
   display: flex;
+  flex-grow: 1;
+}
+
+header #currentMonth {
+  margin-left: 10px;
+  margin-right: auto;
 }
 
 header .icons button {

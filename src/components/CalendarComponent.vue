@@ -3,6 +3,9 @@
     <header>
       <p class="current-date">{{ months[currMonth] }} {{ currYear }}</p>
       <div class="icons">
+        <button id="currentMonth" @click="GoToCurrentMonth">
+          <CalendarIcon></CalendarIcon>
+        </button>
         <button ref="prev" id="prev" @click="DecreaseMonth">&#60;</button>
         <button ref="next" id="next" @click="IncrementMonth">&#62;</button>
       </div>
@@ -42,6 +45,7 @@
 <script setup lang="ts">
 import { ActivityCategory, type Activity } from '@/models/Activity';
 import { ref, computed } from 'vue'
+import CalendarIcon from './CalendarIcon.vue';
 
 const emit = defineEmits<{
   changeMonth: [currYear: number, currMonth: number]
@@ -102,6 +106,14 @@ function IncrementMonth() {
   } else {
     date.value = new Date()
   }
+
+  emit('changeMonth', currYear.value, currMonth.value)
+}
+
+function GoToCurrentMonth() {
+  date.value = new Date()
+  currYear.value = date.value.getFullYear();
+  currMonth.value = date.value.getMonth();
 
   emit('changeMonth', currYear.value, currMonth.value)
 }
