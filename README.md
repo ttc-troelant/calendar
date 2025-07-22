@@ -1,6 +1,7 @@
 # calendar
 
 ## To implement
+
 - [ ] Add activities
 - [ ] Edit activities
 - [ ] Remove activities
@@ -8,9 +9,10 @@
 - [ ] Export to ICS
 - [ ] Export to ICS Feed
 - [x] Color code events
-- [ ] Filter events by month and date
+- [x] Filter events by month and date
 
 ## Future improvements
+
 - [ ] Select month and year by clicking on it
 - [ ] Click on date opens the event
 

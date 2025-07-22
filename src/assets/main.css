@@ -17,6 +17,9 @@ main h1 {
 
 .flex-container {
   display: flex;
+}
+
+.calendar-container {
   max-height: 500px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
 }
@@ -40,6 +43,9 @@ header .icons {
 
 header #currentMonth {
   margin-left: 10px;
+}
+
+header .icons .mr-auto {
   margin-right: auto;
 }
 
@@ -200,7 +206,7 @@ header .current-date {
   background: var(--c-ploeg);
 }
 
-.calendarActivityPreview{
+.calendarActivityPreview {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
@@ -234,7 +240,7 @@ header .current-date {
   background: var(--algemeen);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 876px) {
   main {
     align-items: flex-start;
     padding: 0 20px;
@@ -264,6 +270,8 @@ header .current-date {
     background: var(--color-background);
     color: #fff;
     padding: 25px 30px 10px;
+    max-width: none;
+    width: 100%;
     overflow-y: visible;
   }
 }

@@ -2,7 +2,7 @@
   <main>
     <div>
       <h1>Kalender TTC Troelant</h1>
-      <div class="flex-container">
+      <div class="flex-container calendar-container">
         <CalendarComponent :activities="filteredActivities" @change-month="UpdateDate"></CalendarComponent>
         <ActivityOverview :activities="filteredActivities"></ActivityOverview>
       </div>
@@ -37,15 +37,15 @@ const activities: Activity[] = [
   },
   {
     title: "Troelant B / St-Niklase B",
-    from: new Date(2025, 5, 22, 20, 0, 0),
-    till: new Date(2025, 5, 22, 23, 0, 0),
+    from: new Date(2025, 6, 22, 20, 0, 0),
+    till: new Date(2025, 6, 22, 23, 0, 0),
     category: ActivityCategory.BPLOEG,
     location: 'Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai',
   },
   {
     title: "St-Niklase A / Troelant A",
-    from: new Date(2025, 5, 26, 20, 0, 0),
-    till: new Date(2025, 5, 26, 23, 0, 0),
+    from: new Date(2025, 6, 26, 20, 0, 0),
+    till: new Date(2025, 6, 26, 23, 0, 0),
     category: ActivityCategory.APLOEG,
     location: 'Brandweerkazerne, Nijverheidsstraat 29, 9100 Sint-Niklaas',
   },

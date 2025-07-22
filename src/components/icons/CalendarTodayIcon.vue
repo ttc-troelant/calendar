@@ -8,6 +8,7 @@
 
 <style lang="css" scoped>
 .currentMonthIcon {
-  height: 100%;
+  margin-top: 10%;
+  height: 80%;
 }
 </style>

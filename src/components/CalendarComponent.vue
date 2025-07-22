@@ -4,7 +4,13 @@
       <p class="current-date">{{ months[currMonth] }} {{ currYear }}</p>
       <div class="icons">
         <button id="currentMonth" @click="GoToCurrentMonth">
-          <CalendarIcon></CalendarIcon>
+          <CalendarTodayIcon></CalendarTodayIcon>
+        </button>
+        <button>
+          <CalendarImportIcon></CalendarImportIcon>
+        </button>
+        <button class="mr-auto">
+          <CalendarExportIcon></CalendarExportIcon>
         </button>
         <button ref="prev" id="prev" @click="DecreaseMonth">&#60;</button>
         <button ref="next" id="next" @click="IncrementMonth">&#62;</button>
@@ -45,7 +51,9 @@
 <script setup lang="ts">
 import { ActivityCategory, type Activity } from '@/models/Activity';
 import { ref, computed } from 'vue'
-import CalendarIcon from './CalendarIcon.vue';
+import CalendarTodayIcon from './icons/CalendarTodayIcon.vue';
+import CalendarImportIcon from './icons/CalendarImportIcon.vue';
+import CalendarExportIcon from './icons/CalendarExportIcon.vue';
 
 const emit = defineEmits<{
   changeMonth: [currYear: number, currMonth: number]
