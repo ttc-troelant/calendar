@@ -1,0 +1,162 @@
+[
+  {
+    "title": "Galmaarden E / Troelant C",
+    "description": "O01/041\nGalmaarden E / Troelant C",
+    "from": "2025-09-08T20:00:00.000Z",
+    "till": "2025-09-09T23:00:00.000Z",
+    "category": "Troelant C",
+    "location": "KTTC Galmaarden, Marktplein 19a, 1570 Galmaarden"
+  },
+  {
+    "title": "Troelant C / Aaigem D",
+    "description": "O02/041\nTroelant C / Aaigem D",
+    "from": "2025-09-15T20:00:00.000Z",
+    "till": "2025-09-16T23:00:00.000Z",
+    "category": "Troelant C",
+    "location": "Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai-Waas"
+  },
+  {
+    "title": "Orix C / Troelant C",
+    "description": "O03/041\nOrix C / Troelant C",
+    "from": "2025-09-24T20:00:00.000Z",
+    "till": "2025-09-25T23:00:00.000Z",
+    "category": "Troelant C",
+    "location": "Polyvalente zaal Nieuwerkerken, Schoolstraat 2, 9430 Nieuwerkerken"
+  },
+  {
+    "title": "Troelant C / Wetteren B",
+    "description": "O04/040\nTroelant C / Wetteren B",
+    "from": "2025-10-06T20:00:00.000Z",
+    "till": "2025-10-07T23:00:00.000Z",
+    "category": "Troelant C",
+    "location": "Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai-Waas"
+  },
+  {
+    "title": "Temse A / Troelant C",
+    "description": "O05/040\nTemse A / Troelant C",
+    "from": "2025-10-15T20:30:00.000Z",
+    "till": "2025-10-16T23:30:00.000Z",
+    "category": "Troelant C",
+    "location": "Sportcentrum 'F. Schuerman', Eeckhoutdriesstraat 157, 9140 Temse"
+  },
+  {
+    "title": "Troelant C / Kruibeke D",
+    "description": "O06/038\nTroelant C / Kruibeke D",
+    "from": "2025-10-20T20:00:00.000Z",
+    "till": "2025-10-21T23:00:00.000Z",
+    "category": "Troelant C",
+    "location": "Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai-Waas"
+  },
+  {
+    "title": "Schendelbeke B / Troelant C",
+    "description": "O07/042\nSchendelbeke B / Troelant C",
+    "from": "2025-11-03T20:00:00.000Z",
+    "till": "2025-11-03T23:00:00.000Z",
+    "category": "Troelant C",
+    "location": "Buurthuis, Dagmoedstraat 14 A, 9506 Geraardsbergen"
+  },
+  {
+    "title": "Bernardus D / Troelant C",
+    "description": "O08/042\nBernardus D / Troelant C",
+    "from": "2025-11-11T20:00:00.000Z",
+    "till": "2025-11-11T23:00:00.000Z",
+    "category": "Troelant C",
+    "location": "Zaal Kloosterheide, Kloosterstraat 89, 2880 Bornem"
+  },
+  {
+    "title": "Troelant C / St.-Niklase E",
+    "description": "O09/037\nTroelant C / St.-Niklase E",
+    "from": "2025-11-17T20:00:00.000Z",
+    "till": "2025-11-17T23:00:00.000Z",
+    "category": "Troelant C",
+    "location": "Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai-Waas"
+  },
+  {
+    "title": "Meteor B / Troelant C",
+    "description": "O10/042\nMeteor B / Troelant C",
+    "from": "2025-11-25T20:00:00.000Z",
+    "till": "2025-11-25T23:00:00.000Z",
+    "category": "Troelant C",
+    "location": "'t Sportkot, Sompelplein 39 B, 9700 Oudenaarde"
+  },
+  {
+    "title": "Troelant C / Galmaarden E",
+    "description": "O12/041\nTroelant C / Galmaarden E",
+    "from": "2026-01-05T20:00:00.000Z",
+    "till": "2026-01-05T23:00:00.000Z",
+    "category": "Troelant C",
+    "location": "Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai-Waas"
+  },
+  {
+    "title": "Aaigem D / Troelant C",
+    "description": "O13/041\nAaigem D / Troelant C",
+    "from": "2026-01-13T20:30:00.000Z",
+    "till": "2026-01-13T23:30:00.000Z",
+    "category": "Troelant C",
+    "location": "Zaal, Aaigemdorp 66, 9420 Erpe-Mere"
+  },
+  {
+    "title": "Troelant C / Orix C",
+    "description": "O14/041\nTroelant C / Orix C",
+    "from": "2026-01-19T20:00:00.000Z",
+    "till": "2026-01-19T23:00:00.000Z",
+    "category": "Troelant C",
+    "location": "Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai-Waas"
+  },
+  {
+    "title": "Wetteren B / Troelant C",
+    "description": "O15/040\nWetteren B / Troelant C",
+    "from": "2026-02-02T20:00:00.000Z",
+    "till": "2026-02-02T23:00:00.000Z",
+    "category": "Troelant C",
+    "location": "St-Gertrudiscollege, Wegvoeringstraat 21, 9230 Wetteren"
+  },
+  {
+    "title": "Troelant C / Temse A",
+    "description": "O16/040\nTroelant C / Temse A",
+    "from": "2026-02-09T20:00:00.000Z",
+    "till": "2026-02-09T23:00:00.000Z",
+    "category": "Troelant C",
+    "location": "Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai-Waas"
+  },
+  {
+    "title": "Kruibeke D / Troelant C",
+    "description": "O17/038\nKruibeke D / Troelant C",
+    "from": "2026-02-24T20:00:00.000Z",
+    "till": "2026-02-24T23:00:00.000Z",
+    "category": "Troelant C",
+    "location": "Onze Lieve Vrouwschool, Langestraat 14, 9150 Kruibeke"
+  },
+  {
+    "title": "Troelant C / Schendelbeke B",
+    "description": "O18/042\nTroelant C / Schendelbeke B",
+    "from": "2026-03-02T20:00:00.000Z",
+    "till": "2026-03-02T23:00:00.000Z",
+    "category": "Troelant C",
+    "location": "Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai-Waas"
+  },
+  {
+    "title": "Troelant C / Bernardus D",
+    "description": "O19/042\nTroelant C / Bernardus D",
+    "from": "2026-03-09T20:00:00.000Z",
+    "till": "2026-03-09T23:00:00.000Z",
+    "category": "Troelant C",
+    "location": "Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai-Waas"
+  },
+  {
+    "title": "St.-Niklase E / Troelant C",
+    "description": "O20/037\nSt.-Niklase E / Troelant C",
+    "from": "2026-03-16T20:00:00.000Z",
+    "till": "2026-03-16T23:00:00.000Z",
+    "category": "Troelant C",
+    "location": "St.-Niklase, Nijverheidsstraat 29, 9100 Sint-Niklaas"
+  },
+  {
+    "title": "Troelant C / Meteor B",
+    "description": "O21/042\nTroelant C / Meteor B",
+    "from": "2026-03-23T20:00:00.000Z",
+    "till": "2026-03-23T23:00:00.000Z",
+    "category": "Troelant C",
+    "location": "Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai-Waas"
+  }
+]

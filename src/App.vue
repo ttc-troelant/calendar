@@ -1,4 +1,5 @@
 <template>
+  <!-- <ImportActivities/> -->
   <main>
     <div>
       <h1>Kalender TTC Troelant</h1>
@@ -14,7 +15,14 @@
 import { computed, ref } from 'vue';
 import CalendarComponent from './components/CalendarComponent.vue'
 import ActivityOverview from './components/ActivityOverview.vue';
-import { ActivityCategory, type Activity } from './models/Activity';
+import { type Activity } from './models/Activity';
+// import ImportActivities from './components/ImportActivities.vue';
+
+// Temp import
+import aploegMatches from '@/assets/data/aploeg.json'
+import bploegMatches from '@/assets/data/bploeg.json'
+import cploegMatches from '@/assets/data/cploeg.json'
+import algemeen from '@/assets/data/algemeen.json'
 
 const date = ref(new Date())
 const filteredActivities = computed(() => activities.filter(activity => {
@@ -27,63 +35,33 @@ function UpdateDate(newYear: number, newMonth: number) {
   date.value = new Date(newYear, newMonth)
 }
 
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function reviveActivities(data: any[]): Activity[] {
+  return data.map(item => ({
+    ...item,
+    from: parseWallClockDate(item.from),
+    till: parseWallClockDate(item.till)
+  }))
+}
+
+function parseWallClockDate(dateStr: string) {
+  const [datePart, timePart] = dateStr.split('T')
+  const [year, month, day] = datePart.split('-').map(Number)
+  const [hour, minute, second] = timePart.split(':').map(Number)
+  return new Date(year, month - 1, day, hour, minute, second || 0)
+}
+
+const activitiesA: Activity[] = reviveActivities(aploegMatches)
+const activitiesB: Activity[] = reviveActivities(bploegMatches)
+const activitiesC: Activity[] = reviveActivities(cploegMatches)
+const algemeneActiviteiten: Activity[] = reviveActivities(algemeen)
+
 const activities: Activity[] = [
-  {
-    title: "Troelant A / Nova B",
-    from: new Date(2025, 5, 19, 20, 0, 0),
-    till: new Date(2025, 5, 19, 23, 0, 0),
-    category: ActivityCategory.APLOEG,
-    location: 'Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai',
-  },
-  {
-    title: "Troelant B / St-Niklase B",
-    from: new Date(2025, 6, 22, 20, 0, 0),
-    till: new Date(2025, 6, 22, 23, 0, 0),
-    category: ActivityCategory.BPLOEG,
-    location: 'Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai',
-  },
-  {
-    title: "St-Niklase A / Troelant A",
-    from: new Date(2025, 6, 26, 20, 0, 0),
-    till: new Date(2025, 6, 26, 23, 0, 0),
-    category: ActivityCategory.APLOEG,
-    location: 'Brandweerkazerne, Nijverheidsstraat 29, 9100 Sint-Niklaas',
-  },
-  {
-    title: "Troelant C / Orix C",
-    from: new Date(2025, 5, 27, 20, 0, 0),
-    till: new Date(2025, 5, 27, 23, 0, 0),
-    category: ActivityCategory.CPLOEG,
-    location: 'Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai',
-  },
-  {
-    title: "Zaal niet beschikbaar",
-    from: new Date(2025, 5, 26, 20, 0, 0),
-    till: new Date(2025, 5, 26, 23, 0, 0),
-    category: ActivityCategory.ONBESCHIKBAAR,
-    location: 'Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai',
-  },
-  {
-    title: "Initiatie psychologische hervorming",
-    from: new Date(2025, 5, 5, 19, 30, 0),
-    till: new Date(2025, 5, 5, 23, 0, 0),
-    category: ActivityCategory.ALGEMEEN,
-    location: 'Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai',
-  },
-  {
-    title: "Dubbel Clubkampioenschap",
-    from: new Date(2025, 5, 5, 19, 30, 0),
-    till: new Date(2025, 5, 5, 23, 0, 0),
-    category: ActivityCategory.ALGEMEEN,
-    location: 'Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai',
-  },
-  {
-    title: "Initiatie TTC Troelant",
-    from: new Date(2025, 5, 12, 19, 30, 0),
-    till: new Date(2025, 5, 12, 23, 0, 0),
-    category: ActivityCategory.ALGEMEEN,
-    location: 'Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai',
-  },
+  ...activitiesA,
+  ...activitiesB,
+  ...activitiesC,
+  ...algemeneActiviteiten
 ]
 
 console.log(activities);

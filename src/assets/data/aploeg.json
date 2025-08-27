@@ -1,0 +1,162 @@
+[
+  {
+    "title": "Kruibeke A / Troelant A",
+    "description": "O01/005\nKruibeke A / Troelant A",
+    "from": "2025-09-09T20:00:00.000Z",
+    "till": "2025-09-10T23:00:00.000Z",
+    "category": "Troelant A",
+    "location": "Onze Lieve Vrouwschool, Langestraat 14, 9150 Kruibeke"
+  },
+  {
+    "title": "Troelant A / TTC Deinze A",
+    "description": "O02/005\nTroelant A / TTC Deinze A",
+    "from": "2025-09-18T20:00:00.000Z",
+    "till": "2025-09-19T23:00:00.000Z",
+    "category": "Troelant A",
+    "location": "Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai-Waas"
+  },
+  {
+    "title": "Dynamica A / Troelant A",
+    "description": "O03/005\nDynamica A / Troelant A",
+    "from": "2025-09-25T20:00:00.000Z",
+    "till": "2025-09-26T23:00:00.000Z",
+    "category": "Troelant A",
+    "location": "Gem. Lagere School, Podtsmeulen 9, 9250 Waasmunster"
+  },
+  {
+    "title": "Troelant A / Bernardus A",
+    "description": "O04/004\nTroelant A / Bernardus A",
+    "from": "2025-10-09T20:00:00.000Z",
+    "till": "2025-10-10T23:00:00.000Z",
+    "category": "Troelant A",
+    "location": "Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai-Waas"
+  },
+  {
+    "title": "Aalst A / Troelant A",
+    "description": "O05/004\nAalst A / Troelant A",
+    "from": "2025-10-13T20:00:00.000Z",
+    "till": "2025-10-14T23:00:00.000Z",
+    "category": "Troelant A",
+    "location": "TTC Erembodegem, Cesar Haeltermanstraat 71, 9300 Aalst"
+  },
+  {
+    "title": "Troelant A / Galmaarden A",
+    "description": "O06/002\nTroelant A / Galmaarden A",
+    "from": "2025-10-23T20:00:00.000Z",
+    "till": "2025-10-24T23:00:00.000Z",
+    "category": "Troelant A",
+    "location": "Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai-Waas"
+  },
+  {
+    "title": "Okapi Beveren A / Troelant A",
+    "description": "O08/006\nOkapi Beveren A / Troelant A",
+    "from": "2025-11-10T20:30:00.000Z",
+    "till": "2025-11-10T23:30:00.000Z",
+    "category": "Troelant A",
+    "location": "Sporthal 'De Perel', Kallodam, 9120 Beveren-Waas"
+  },
+  {
+    "title": "Troelant A / Zele A",
+    "description": "O09/001\nTroelant A / Zele A",
+    "from": "2025-11-20T20:00:00.000Z",
+    "till": "2025-11-20T23:00:00.000Z",
+    "category": "Troelant A",
+    "location": "Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai-Waas"
+  },
+  {
+    "title": "Meteor A / Troelant A",
+    "description": "O10/006\nMeteor A / Troelant A",
+    "from": "2025-11-25T20:00:00.000Z",
+    "till": "2025-11-25T23:00:00.000Z",
+    "category": "Troelant A",
+    "location": "'t Sportkot, Sompelplein 39 B, 9700 Oudenaarde"
+  },
+  {
+    "title": "Troelant A / Erpe-Mere A",
+    "description": "O11/002\nTroelant A / Erpe-Mere A",
+    "from": "2025-12-04T20:00:00.000Z",
+    "till": "2025-12-04T23:00:00.000Z",
+    "category": "Troelant A",
+    "location": "Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai-Waas"
+  },
+  {
+    "title": "Troelant A / Kruibeke A",
+    "description": "O12/005\nTroelant A / Kruibeke A",
+    "from": "2026-01-08T20:00:00.000Z",
+    "till": "2026-01-08T23:00:00.000Z",
+    "category": "Troelant A",
+    "location": "Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai-Waas"
+  },
+  {
+    "title": "TTC Deinze A / Troelant A",
+    "description": "O13/005\nTTC Deinze A / Troelant A",
+    "from": "2026-01-12T20:30:00.000Z",
+    "till": "2026-01-12T23:30:00.000Z",
+    "category": "Troelant A",
+    "location": "TTC Deinze, Nieuwstraat 3, 9800 Deinze"
+  },
+  {
+    "title": "Troelant A / Dynamica A",
+    "description": "O14/005\nTroelant A / Dynamica A",
+    "from": "2026-01-22T20:00:00.000Z",
+    "till": "2026-01-22T23:00:00.000Z",
+    "category": "Troelant A",
+    "location": "Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai-Waas"
+  },
+  {
+    "title": "Bernardus A / Troelant A",
+    "description": "O15/004\nBernardus A / Troelant A",
+    "from": "2026-02-03T20:00:00.000Z",
+    "till": "2026-02-03T23:00:00.000Z",
+    "category": "Troelant A",
+    "location": "Zaal Kloosterheide, Kloosterstraat 89, 2880 Bornem"
+  },
+  {
+    "title": "Troelant A / Aalst A",
+    "description": "O16/004\nTroelant A / Aalst A",
+    "from": "2026-02-12T20:00:00.000Z",
+    "till": "2026-02-12T23:00:00.000Z",
+    "category": "Troelant A",
+    "location": "Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai-Waas"
+  },
+  {
+    "title": "Galmaarden A / Troelant A",
+    "description": "O17/002\nGalmaarden A / Troelant A",
+    "from": "2026-02-23T20:00:00.000Z",
+    "till": "2026-02-23T23:00:00.000Z",
+    "category": "Troelant A",
+    "location": "KTTC Galmaarden, Marktplein 19a, 1570 Galmaarden"
+  },
+  {
+    "title": "Troelant A / Okapi Beveren A",
+    "description": "O19/006\nTroelant A / Okapi Beveren A",
+    "from": "2026-03-12T20:00:00.000Z",
+    "till": "2026-03-12T23:00:00.000Z",
+    "category": "Troelant A",
+    "location": "Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai-Waas"
+  },
+  {
+    "title": "Zele A / Troelant A",
+    "description": "O20/001\nZele A / Troelant A",
+    "from": "2026-03-18T20:00:00.000Z",
+    "till": "2026-03-18T23:00:00.000Z",
+    "category": "Troelant A",
+    "location": "Sporthal 'De Zeven', Koevliet 1, 9240 Zele"
+  },
+  {
+    "title": "Troelant A / Meteor A",
+    "description": "O21/006\nTroelant A / Meteor A",
+    "from": "2026-03-26T20:00:00.000Z",
+    "till": "2026-03-26T23:00:00.000Z",
+    "category": "Troelant A",
+    "location": "Jeugdhuis Troelant, Vleeshouwersstraat 4c, 9112 Sinaai-Waas"
+  },
+  {
+    "title": "Erpe-Mere A / Troelant A",
+    "description": "O22/002\nErpe-Mere A / Troelant A",
+    "from": "2026-04-01T20:00:00.000Z",
+    "till": "2026-04-02T23:00:00.000Z",
+    "category": "Troelant A",
+    "location": "Sporthal Steenberg, Oudenaardsesteenweg 458, 9420 Erpe-Mere"
+  }
+]
