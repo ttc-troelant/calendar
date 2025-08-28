@@ -205,6 +205,9 @@ header .current-date {
 .c-ploeg-listItem::before {
   background: var(--c-ploeg);
 }
+.algemeen-listItem::before {
+  background: var(--algemeen);
+}
 
 .calendarActivityPreview {
   position: absolute;
