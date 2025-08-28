@@ -63,7 +63,4 @@ const activities: Activity[] = [
   ...activitiesC,
   ...algemeneActiviteiten
 ]
-
-console.log(activities);
-
 </script>
