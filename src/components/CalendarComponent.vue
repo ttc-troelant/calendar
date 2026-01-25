@@ -6,10 +6,7 @@
         <button id="currentMonth" @click="GoToCurrentMonth">
           <CalendarTodayIcon></CalendarTodayIcon>
         </button>
-        <!-- <button>
-          <CalendarImportIcon></CalendarImportIcon>
-        </button>
-        <button class="mr-auto">
+        <!-- <button class="mr-auto">
           <CalendarExportIcon></CalendarExportIcon>
         </button> -->
         <div class="mr-auto"></div>
@@ -53,7 +50,6 @@
 import { ActivityCategory, type Activity } from '@/models/Activity';
 import { ref, computed } from 'vue'
 import CalendarTodayIcon from './icons/CalendarTodayIcon.vue';
-// import CalendarImportIcon from './icons/CalendarImportIcon.vue';
 // import CalendarExportIcon from './icons/CalendarExportIcon.vue';
 
 const emit = defineEmits<{
@@ -131,7 +127,7 @@ const { activities } = defineProps<{ activities: Activity[] }>()
 
 function getActivityCategoriesForDay(day: number): ActivityCategory[] {
   return activities
-    .filter((activity) => activity.from.getDate() === day && activity.category !== ActivityCategory.ONBESCHIKBAAR)
+    .filter((activity) => new Date(activity.from).getDate() === day && activity.category !== ActivityCategory.ONBESCHIKBAAR)
     .map((activity) => activity.category)
 }
 
@@ -143,13 +139,21 @@ function getActivityCategoryClass(category: ActivityCategory) {
       return 'b-ploeg-calendarItem'
     case ActivityCategory.CPLOEG:
       return 'c-ploeg-calendarItem'
+    case ActivityCategory.MASTER:
+      return 'master-calendarItem'
+    case ActivityCategory.BEKER:
+      return 'beker-calendarItem'
+    case ActivityCategory.DPLOEG:
+      return 'd-ploeg-calendarItem'
     case ActivityCategory.ALGEMEEN:
       return 'algemeen-calendarItem'
+    default:
+      return ''
   }
 }
 
 function isAvailable(day: number) {
   return activities
-    .filter((activity) => activity.from.getDate() === day && activity.category === ActivityCategory.ONBESCHIKBAAR).length > 0
+    .filter((activity) => new Date(activity.from).getDate() === day && activity.category === ActivityCategory.ONBESCHIKBAAR).length > 0
 }
 </script>

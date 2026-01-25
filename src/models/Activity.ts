@@ -1,16 +1,20 @@
 export interface Activity {
+  id: number
   title: string
   description?: string
-  from: Date
-  till: Date
+  from: string
+  till: string
   category: ActivityCategory
   location?: string
 }
 
 export enum ActivityCategory {
-  APLOEG = 'Troelant A',
-  BPLOEG = 'Troelant B',
-  CPLOEG = 'Troelant C',
-  ALGEMEEN = 'Algemeen',
-  ONBESCHIKBAAR = 'Zaal onbeschikbaar',
+  ONBESCHIKBAAR = -1,
+  ALGEMEEN = 0,
+  BEKER = 1,
+  MASTER = 2,
+  APLOEG = 10,
+  BPLOEG = 11,
+  CPLOEG = 12,
+  DPLOEG = 13,
 }
