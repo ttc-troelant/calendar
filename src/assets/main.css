@@ -178,14 +178,18 @@ header .current-date {
 .a-ploeg-listItem,
 .b-ploeg-listItem,
 .c-ploeg-listItem,
-.algemeen-listItem {
+.algemeen-listItem,
+.beker-listItem,
+.master-listItem {
   position: relative;
 }
 
 .a-ploeg-listItem::before,
 .b-ploeg-listItem::before,
 .c-ploeg-listItem::before,
-.algemeen-listItem::before {
+.algemeen-listItem::before,
+.beker-listItem::before,
+.master-listItem::before {
   content: ' ';
   position: absolute;
   top: 5%;
@@ -208,6 +212,12 @@ header .current-date {
 .algemeen-listItem::before {
   background: var(--algemeen);
 }
+.beker-listItem::before {
+  background: var(--algemeen);
+}
+.master-listItem::before {
+  background: var(--algemeen);
+}
 
 .calendarActivityPreview {
   position: absolute;
@@ -223,7 +233,9 @@ header .current-date {
 .a-ploeg-calendarItem,
 .b-ploeg-calendarItem,
 .c-ploeg-calendarItem,
-.algemeen-calendarItem {
+.algemeen-calendarItem,
+.master-calendarItem,
+.beker-calendarItem {
   width: 20px;
   height: 5px;
 }
@@ -240,6 +252,14 @@ header .current-date {
 }
 
 .algemeen-calendarItem {
+  background: var(--algemeen);
+}
+
+.master-calendarItem {
+  background: var(--algemeen);
+}
+
+.beker-calendarItem {
   background: var(--algemeen);
 }
 
