@@ -21,7 +21,7 @@ const title = computed(() => {
   return `${titleFormatter.format(date)} - ${activity.title}`
 })
 
-const timeOptions: Intl.DateTimeFormatOptions = { hour: '2-digit', minute: '2-digit', timeZone: 'UTC'}
+const timeOptions: Intl.DateTimeFormatOptions = { hour: '2-digit', minute: '2-digit' }
 const time = computed(() => {
   const fromDate = new Date(activity.from)
   const tillDate = new Date(activity.till)
