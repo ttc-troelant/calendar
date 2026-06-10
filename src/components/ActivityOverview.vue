@@ -29,12 +29,12 @@ function getActivityCategoryClass(category: ActivityCategory) {
       return 'b-ploeg-listItem'
     case ActivityCategory.CPLOEG:
       return 'c-ploeg-listItem'
+    case ActivityCategory.DPLOEG:
+      return 'd-ploeg-listItem'
     case ActivityCategory.MASTER:
       return 'master-listItem'
     case ActivityCategory.BEKER:
       return 'beker-listItem'
-    case ActivityCategory.DPLOEG:
-      return 'd-ploeg-listItem'
     case ActivityCategory.ALGEMEEN:
       return 'algemeen-listItem'
     default:
