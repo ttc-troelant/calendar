@@ -139,12 +139,12 @@ function getActivityCategoryClass(category: ActivityCategory) {
       return 'b-ploeg-calendarItem'
     case ActivityCategory.CPLOEG:
       return 'c-ploeg-calendarItem'
+    case ActivityCategory.DPLOEG:
+      return 'd-ploeg-calendarItem'
     case ActivityCategory.MASTER:
       return 'master-calendarItem'
     case ActivityCategory.BEKER:
       return 'beker-calendarItem'
-    case ActivityCategory.DPLOEG:
-      return 'd-ploeg-calendarItem'
     case ActivityCategory.ALGEMEEN:
       return 'algemeen-calendarItem'
     default:
