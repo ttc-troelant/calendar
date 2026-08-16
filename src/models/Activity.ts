@@ -18,3 +18,8 @@ export enum ActivityCategory {
   CPLOEG = 12,
   DPLOEG = 13,
 }
+
+export interface ActivityMonthRequest {
+  year: number
+  month: number
+}

@@ -28,9 +28,10 @@ const filteredActivities = computed(() => activityStore.activities.filter(activi
 
 function UpdateDate(newYear: number, newMonth: number) {
   date.value = new Date(newYear, newMonth)
+  activityStore.fetchActivities(newYear, newMonth, true)
 }
 
 onMounted(() => {
-  activityStore.fetchActivities()
+  activityStore.fetchActivities(date.value.getFullYear(), date.value.getMonth(), true)
 })
 </script>
